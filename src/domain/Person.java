@@ -5,17 +5,23 @@ import java.util.List;
 
 public class Person {
 
-	private String firstname;
+	public Person()
+	{
+		this.addressses=new ArrayList<Address>();
+	}
+	
+	private String firstName;
 	private String surname;
 	private String pesel;
 	
 	private User user;
-	private List<Address> addresses;
-	public String getFirstname() {
-		return firstname;
+	private List<Address> addressses;
+	
+	public String getFirstName() {
+		return firstName;
 	}
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 	public String getSurname() {
 		return surname;
@@ -35,13 +41,10 @@ public class Person {
 	public void setUser(User user) {
 		this.user = user;
 	}
-	public List<Address> getAddresses() {
-		return addresses;
+	public List<Address> getAddressses() {
+		return addressses;
 	}
-	public void setAddresses(List<Address> addresses) {
-		this.addresses = addresses;
-	}
-	
-	
-	
+	public void setAddressses(List<Address> addressses) {
+		this.addressses = addressses;
+	}	
 }
